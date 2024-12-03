@@ -78,6 +78,7 @@ a{
 .container-home .main-home .mytexts h1{
   font-weight: 700;
   font-size: 50px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
 }
 .container-home .main-home .mytexts .subheading{
   font-weight: 700;
@@ -168,4 +169,35 @@ a{
 .main-home .myimages .images img:hover{
   transform: scale(1.2);
 
+}
+
+/* Resume */
+
+.container-resume {
+  color: white;
+  margin-top: 50px;
+}
+#resume-section{
+  margin-top: 50px;
+}
+#navi{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+}
+#navi li{
+  display: block;
+  
+}
+#navi a{
+  color: #ff9900;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+#resume-section .container-resume .heading{
+  color: #ff9900;
+  font-weight: 800;
+  font-size: 30px;
 }
