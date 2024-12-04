@@ -26,6 +26,7 @@ a{
 }
 .navbar-custom .navbar-brand:hover {
   color: white;
+  text-shadow:0 0 20px #f7f6f5; ;
 }
 .navbar-custom .navbar-nav .nav-link {
   color:white;  
@@ -156,10 +157,14 @@ a{
   margin-top: 20px;
   color: #ff9900;
   border-radius: 20px;
+  font-weight: 400;
+  font-size: 20px;
 }
 .btn a{
   color: #ff9900; 
   text-decoration: none;
+  /* font-weight: 400; */
+
 }
 
 .btn a:hover {
@@ -189,6 +194,7 @@ a{
 }
 .main-home .myimages .images img:hover{
   transform: scale(1.2);
+  box-shadow: 0 0 45px #ff9900;
 
 }
 
