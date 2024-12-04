@@ -76,6 +76,9 @@ a{
 .navbar-custom .navbar-nav .nav-link.active:hover::after {
   width: 100%; 
 }
+.navbar-toggler-icon {
+  filter: invert(100%);
+}
 
 /* Home */
 .container-home{
@@ -102,11 +105,50 @@ a{
   font-size: 50px;
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
 }
+.animation-text {
+  position: relative;
+  display: inline-block;
+  color: #ff9900;
+}
+@keyframes changeText {
+  0% {
+    content: "Coding.";
+  }
+  20% {
+    content: "Designing.";
+  }
+  40% {
+    content: "Programming.";
+  }
+  60% {
+    content: "Travelling.";
+  }
+  80% {
+    content: "Learning.";
+  }
+  100% {
+    content: "Coding."; 
+  }
+}
+.animation-text::after {
+  content: "Coding"; 
+  animation: changeText 6s infinite; 
+}
 .container-home .main-home .mytexts .subheading{
   font-weight: 700;
   color: #ff9900;
   font-size: 30px;
 }
+
+/* .container-home .main-home .mytexts .subheading p::before{
+  content: 'this is before Hey ';
+  color: red;
+}
+
+.container-home .main-home .mytexts h1::after{
+  content: ' this is after Nikesh';
+  color: red;
+} */
 
 .container-home .main-home .mytexts .icons {
   display: flex; 
@@ -418,4 +460,120 @@ a{
   text-decoration: none;
   font-size: 16px;
   color: #FFAC00; 
+}
+.mytexts .find{
+  text-align: start;
+}
+
+
+/* responsiveness */
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+  .navbar-custom {
+    padding: 10px 20px;
+  }
+
+  .navbar-custom .navbar-nav .nav-link {
+    display: block; 
+    margin-right: 0;
+  }
+}
+
+/* Responsive Home Section */
+@media (max-width: 768px) {
+  .container-home {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .container-home .main-home {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .main-home .myimages {
+    width: 80%;
+    margin-top: 20px;
+  }
+
+  .main-home .myimages .images {
+    width: 250px;
+    height: 250px;
+  }
+
+  .container-home .main-home .mytexts h1 {
+    font-size: 36px;
+  }
+
+  .container-home .main-home .mytexts .subheading {
+    font-size: 24px;
+  }
+}
+
+/* Responsive Projects Section */
+@media (max-width: 768px) {
+  .projects-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-card {
+    width: 90%;  /* Make cards take full width on smaller screens */
+  }
+}
+
+/* Responsive Resume Section */
+@media (max-width: 768px) {
+  #navi {
+    top: 0;
+    position: relative; /* Disable sticky positioning */
+  }
+
+  .resume-wrap {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .resume-wrap .icon {
+    margin-bottom: 10px;
+  }
+
+  .resume-wrap .text {
+    width: 100%; /* Full width text on small screens */
+  }
+}
+
+/* Responsive Contact Section */
+@media (max-width: 768px) {
+  .contact-grid {
+    flex-direction: column;
+  }
+
+  .contact-card {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+  .mytexts .find{
+    text-align: center;
+  }
+  
+
+}
+
+/* Further Adjustments for Very Small Screens */
+@media (max-width: 480px) {
+  .container-home .main-home .mytexts h1 {
+    font-size: 28px;
+  }
+
+  .container-home .main-home .mytexts .subheading {
+    font-size: 18px;
+  }
+
+  .project-card,
+  .contact-card {
+    padding: 15px;
+  }
 }
