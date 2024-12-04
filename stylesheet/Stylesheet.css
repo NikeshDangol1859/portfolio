@@ -199,9 +199,6 @@ a{
 }
 
 /* Resume */
-.resume-section{
-  margin-top: 50px;
-}
 
 .container-resume {
   color: white;
@@ -231,20 +228,22 @@ a{
 
 .page {
   width: 100%;
-  margin-bottom: 7em; }
-  .page.four {
-    margin-bottom: 0; }
+  margin-bottom: 7em; 
+}
   .page .heading {
     font-weight: 800;
     font-size: 30px;
     margin-bottom: 30px;
-    color: #FFAC00; }
+    color: #FFAC00; 
+    margin-top: 50px;
+  }
 
 .resume-wrap {
   width: 100%;
   margin-bottom: 30px;
   border-bottom: 1px solid rgb(150,150,150,0.3);
   padding-bottom: 10px; }
+
   .resume-wrap:nth-child(1){
     border-bottom: 0;
   }
@@ -389,6 +388,8 @@ a{
 
 .contact-card:hover {
   transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(184, 184, 184, 0.3);
+
 }
 
 .contact-icon {
