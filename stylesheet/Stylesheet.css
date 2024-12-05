@@ -219,9 +219,10 @@ a{
   margin: 0 auto;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
-.main-home .myimages .images{
+  .main-home .myimages .images{
   width: 400px;
   height: 400px;  
 }
@@ -233,12 +234,25 @@ a{
   border-radius: 50%;
   transition: transform 0.3s ease;
   box-shadow: 0 0 40px #ff9900;
+  animation: slideUp 2s ease-out forwards;
 }
 .main-home .myimages .images img:hover{
   transform: scale(1.2);
   box-shadow: 0 0 45px #ff9900;
 
 }
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 
 /* Resume */
 
