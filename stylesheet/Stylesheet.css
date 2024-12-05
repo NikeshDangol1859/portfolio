@@ -343,7 +343,6 @@ a{
       text-align: center;
       padding: 50px 20px;
 
-
   }
   
   .title {
@@ -372,17 +371,12 @@ a{
     transition: transform 0.3s ease, background-color 0.3s ease;
 
 }
-@keyframes slideUp {
-  from {
-    opacity: 0;
-  }  
-  to {
-    opacity: 1;
-  }
-}
+
 
 .project-card:hover {
-    background-color: #FFAC00;
+    /* background-color: #ff9900; */
+    background: radial-gradient(ellipse at top, rgba(251, 144, 22, 0), #ff9900), 
+                radial-gradient(ellipse at bottom, #ff9900, rgba(246, 166, 29, 0.65));
     color: #000; 
     transform: scale(1.05);
     box-shadow: 0 4px 8px rgba(255, 202, 10, 0.3);
@@ -401,7 +395,7 @@ a{
     color: #f2f2f2;
     margin-bottom: 10px;
     transition: color 0.3s ease;
-    animation: slideUp 5s ease-out forwards;
+    animation: slideUp 3.5s ease-out forwards;
 
 }
 
@@ -410,7 +404,7 @@ a{
     font-weight: bold;
     margin-bottom: 15px;
     transition: color 0.3s ease; 
-    animation: slideUp 5s ease-out forwards;
+    animation: slideUp 3.5s ease-out forwards;
 
 }
 
@@ -419,8 +413,16 @@ a{
     color: #dcdcdc;
     line-height: 1.6;
     transition: color 0.3s ease;
-    animation: slideUp 5s ease-out forwards;
+    animation: slideUp 3.5s ease-out forwards;
 
+}
+@keyframes slideUp {
+  from {
+    opacity: 0;
+  }  
+  to {
+    opacity: 1;
+  }
 }
 
 /* Contacts */
