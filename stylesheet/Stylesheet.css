@@ -12,6 +12,12 @@ ul li{
 a{
   text-decoration: none;
 }
+.love-light-regular {
+  font-family: "Love Light", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
 .navbar-custom {
   background-color: #1a1a1a; 
   padding: 15px 30px;
@@ -22,7 +28,9 @@ a{
   color: #ff9900;  
   font-size: 1.8rem;  
   font-weight: bold;
-  font-family:Verdana, Geneva, Tahoma, sans-serif; 
+  /* font-family:Verdana, Geneva, Tahoma, sans-serif;  */
+  font-family: "Neonderthaw", cursive;;
+  font-weight: 700;
 }
 .navbar-custom .navbar-brand:hover {
   color: white;
@@ -83,8 +91,10 @@ a{
 /* Home */
 .container-home{
   width: 90%;
-  height: 100lvh; 
+  height: auto; 
   margin: auto;
+  margin-top: 50px;
+  padding: 20px;
   display: flex; 
   justify-content: center; 
   align-items: center;
@@ -560,7 +570,8 @@ a{
   }
 
   .container-home .main-home .mytexts h1 {
-    font-size: 36px;
+    /* font-size: 36px; */
+    width: 100%;
   }
 
   .container-home .main-home .mytexts .subheading {
@@ -569,7 +580,7 @@ a{
 }
 
 
-/* Responsive Projects Section */
+/* Responsive Projects  */
 @media (max-width: 768px) {
   .projects-grid {
     flex-direction: column;
@@ -577,15 +588,15 @@ a{
   }
 
   .project-card {
-    width: 90%;  /* Make cards take full width on smaller screens */
+    width: 90%;  
   }
 }
 
-/* Responsive Resume Section */
+/* Responsive Resume  */
 @media (max-width: 768px) {
   #navi {
     top: 0;
-    position: relative; /* Disable sticky positioning */
+    position: relative; 
   }
 
   .resume-wrap {
@@ -599,14 +610,15 @@ a{
   }
 
   .resume-wrap .text {
-    width: 100%; /* Full width text on small screens */
+    width: 100%;
   }
 }
 
-/* Responsive Contact Section */
+/* Responsive Contact */
 @media (max-width: 768px) {
   .contact-grid {
     flex-direction: column;
+    align-items: center;    
   }
 
   .contact-card {
@@ -614,6 +626,9 @@ a{
     margin-bottom: 20px;
   }
   .contanct-footer .find{
+    text-align: center;
+  }
+  .contanct-footer .icons{
     text-align: center;
   }
   
