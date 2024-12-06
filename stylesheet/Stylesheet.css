@@ -140,10 +140,17 @@ a{
     content: "Coding."; 
   }
 }
+
+
 .animation-text::after {
   content: "Coding"; 
-  animation: changeText 6s infinite; 
+  animation: changeText 6s infinite;  
 }
+
+
+
+
+
 .container-home .main-home .mytexts .subheading{
   font-weight: 700;
   color: #ff9900;
@@ -324,7 +331,8 @@ a{
 }
 .know-animation::after {
   content: ""; 
-  animation: changeDot 3s infinite; 
+  animation: changeDot 3s infinite;
+
 }
 .container-about .main-about .offer{
   font-size: 40px;
