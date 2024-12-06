@@ -288,6 +288,7 @@ a{
   text-align: center;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 700;
+  margin-bottom: 30px;
 }
 .container-about .main-about .paragraph{
   padding: 10px;
@@ -297,6 +298,33 @@ a{
   color: white;
   font-size: 20px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.know-animation {
+  position: relative;
+  display: inline-block;
+  color: #ff9900;
+}
+@keyframes changeDot {
+  0% {
+    content: "";
+  }
+  25% {
+    content: ".";
+  }
+  50% {
+    content: "..";
+  }
+  75%{
+    content: "...";
+  }
+  100% {
+    content: "";
+  }
+  
+}
+.know-animation::after {
+  content: ""; 
+  animation: changeDot 3s infinite; 
 }
 .container-about .main-about .offer{
   font-size: 40px;
