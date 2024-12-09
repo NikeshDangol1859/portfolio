@@ -115,7 +115,7 @@ a{
   font-size: 50px;
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
 }
-.animation-text {
+/* .animation-text {
   position: relative;
   display: inline-block;
   color: #ff9900;
@@ -145,12 +145,38 @@ a{
 .animation-text::after {
   content: "Coding"; 
   animation: changeText 6s infinite;  
+} */
+.animation-text {
+  display: inline-flex;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid orange;
+  animation: typing 10s steps(12) infinite, blink 0.6s step-end infinite;
+  width: 0; 
+  color: #ff9900;
+  font-weight: bold;
+  position: relative;
 }
 
+@keyframes typing {
+  0%, 20% { width: 0; content: "Coding."; } 
+  25%, 40% { width: 6ch; content: "Coding."; }
+  45%, 50% { width: 0; } 
 
+  58%, 63% { width: 0; content: "Designing."; }   
+  68%, 83% { width: 9ch; content: "Designing."; }
+  88%, 93% { width: 0; } 
 
+  99%, 100% { width: 0; content: "Designing."; } 
+}
 
-
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+.animation-text::after {
+  content: "Coding"; 
+  animation: typing 10s infinite;
+}
 .container-home .main-home .mytexts .subheading{
   font-weight: 700;
   color: #ff9900;
