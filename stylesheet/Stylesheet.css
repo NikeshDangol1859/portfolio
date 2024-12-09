@@ -160,14 +160,14 @@ a{
 
 @keyframes typing {
   0%, 20% { width: 0; content: "Coding."; } 
-  25%, 40% { width: 6ch; content: "Coding."; }
+  25%, 40% { width: 6.5ch; content: "Coding."; }
   45%, 50% { width: 0; } 
 
-  58%, 63% { width: 0; content: "Designing."; }   
-  68%, 83% { width: 9ch; content: "Designing."; }
+  58%, 63% { width: 0; content: "Programming."; }   
+  68%, 83% { width: 12ch; content: "Programming."; }
   88%, 93% { width: 0; } 
 
-  99%, 100% { width: 0; content: "Designing."; } 
+  99%, 100% { width: 0; content: "Programming."; } 
 }
 
 @keyframes blink {
@@ -176,6 +176,7 @@ a{
 .animation-text::after {
   content: "Coding"; 
   animation: typing 10s infinite;
+
 }
 .container-home .main-home .mytexts .subheading{
   font-weight: 700;
