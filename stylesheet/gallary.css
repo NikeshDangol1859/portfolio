@@ -60,7 +60,7 @@ h6 {
 
 .languagesUsed {
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     padding: 20px;
 }
 
@@ -103,6 +103,19 @@ ul li {
 }
 .margins{
     margin-top: 50px;
+    height: 100px;
+}
+.uparrow a{
+    background-color: rgb(255, 149, 0);;
+    position: fixed;
+    right:5px;
+    bottom: 5px;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
 }
 
 /* Responsive gallary */
@@ -116,6 +129,9 @@ ul li {
     .gallary-details {
         width: 100%; 
     }
+    .gallary-description{
+        text-align: justify;
+    }
 
     h1 {
         font-size: 28px; 
@@ -127,14 +143,17 @@ ul li {
         text-align: center;
     }
 
-    .languagesUsed {
+    /* .languagesUsed {
         flex-direction: column; 
-    }
+    } */
 
     .frontend,
     .backend {
         width: 100%; 
         text-align: center; 
+    }
+    ul li{
+        text-align: center;
     }
 
     .link {
@@ -153,6 +172,11 @@ ul li {
 
     .para {
         font-size: 14px;
+    }
+    .frontend,
+    .backend {
+        width: 100%; 
+        text-align: center; 
     }
 
     .link {
