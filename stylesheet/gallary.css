@@ -101,6 +101,9 @@ ul li {
     padding: 10px;
     border-radius: 10px;
 }
+.margins{
+    margin-top: 50px;
+}
 
 /* Responsive gallary */
 @media (max-width: 768px) {

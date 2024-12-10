@@ -157,7 +157,7 @@ a{
   overflow: hidden;
   white-space: nowrap;
   border-right: 2px solid orange;
-  animation: typing 10s steps(12) infinite, blink 0.6s step-end infinite;
+  animation: typing 10s steps(24) infinite, blink 0.6s step-end infinite;
   width: 0; 
   color: #ff9900;
   font-weight: bold;
@@ -169,11 +169,11 @@ a{
   25%, 40% { width: 6.5ch; content: "Coding."; }
   45%, 50% { width: 0; } 
 
-  58%, 63% { width: 0; content: "Programming."; }   
-  68%, 83% { width: 12ch; content: "Programming."; }
+  58%, 63% { width: 0; content: "Designing."; }   
+  68%, 83% { width: 9ch; content: "Designing."; }
   88%, 93% { width: 0; } 
 
-  99%, 100% { width: 0; content: "Programming."; } 
+  99%, 100% { width: 0; content: "Designing."; } 
 }
 
 @keyframes blink {
@@ -284,6 +284,7 @@ a{
   border-radius: 50%;
   transition: transform 0.3s ease;
   box-shadow: 0 0 40px #ff9900;
+  filter: grayscale(100%);
 }
 .main-home .myimages .images img:hover{
   transform: scale(1.2);
@@ -338,7 +339,7 @@ a{
   box-shadow: 0px 0 10px 5px rgba(80, 80, 80, 0.337);
   border-radius: 10px;
   margin-bottom: 50px;
-  color: white;
+  color: #e0e0e0cc;
   font-size: 20px;
   /* font-family: 'Times New Roman', Times, serif; */
   text-align: justify;
