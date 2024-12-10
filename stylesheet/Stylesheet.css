@@ -638,6 +638,7 @@ a{
     opacity: 1;
   }
 }
+
 .dot-animation {
   position: relative;
   display: inline-flex;
@@ -664,8 +665,12 @@ a{
 .dot-animation::after {
   content: "."; 
   animation: changeDot 3s infinite;
-
+  color: #000;
 }
+
+/* .linkproject a:hover {
+  color: #000;
+} */
 
 /* Contacts */
 .contact-container {
