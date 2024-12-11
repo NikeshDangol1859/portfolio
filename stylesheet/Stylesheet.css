@@ -243,10 +243,15 @@ a{
 .icons-home:hover::after {
   width: 100%;
 }
+.mytexts .btnss{
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+
+}
 .mytexts .btn{
   display: flex; 
   justify-content: center; 
-  margin-top: 20px;
   color: #ff9900;
   border-radius: 20px;
   font-weight: 400;
@@ -259,7 +264,7 @@ a{
 
 }
 
-.btn a:hover {
+a .btn:hover {
   color: black; 
 }
 .main-home .myimages{
@@ -727,7 +732,7 @@ a{
 
 .contact-detail {
   font-size: 16px;
-  color: #FFAC00; /* Contact details in yellow */
+  color: #FFAC00; 
 }
 .contact-detail a {
   text-decoration: none;
